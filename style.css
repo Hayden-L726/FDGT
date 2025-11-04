@@ -45,7 +45,7 @@ body{
   display:flex;
   justify-content:center;
   gap:48px;
-  margin-top:32px;
+  margin-top:64px;
   flex-wrap:wrap;
 }
 .stat{
@@ -65,7 +65,7 @@ body{
 .content{
   max-width:900px;
   margin:0 auto;
-  background:rgba(255,255,255,0.02);
+  background:rgba(69,182,254,0.02);
   padding:40px;
   border-radius:var(--radius);
   box-shadow:0 6px 30px rgba(2,6,23,0.6);
