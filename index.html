@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDGT - Fast and Direct Goods Transportation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1>FDGT</h1>
+            <p class="tagline">Bringing the trucking industry into the 21st century</p>
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Partners</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10M+</span>
+                    <span class="stat-label">Miles Logged</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">99.7%</span>
+                    <span class="stat-label">On-Time Delivery</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section id="about" class="fade-in">
+            <h2>About FDGT</h2>
+            <div class="about-content">
+                <p class="lead">Fast and Direct Goods Transportation is revolutionizing logistics through cutting-edge technology and sustainable practices.</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🚚 Smart Logistics</h3>
+                        <p>AI-powered route optimization and real-time tracking for maximum efficiency.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🌱 Eco-Friendly</h3>
+                        <p>Reducing carbon footprint through optimized routes and electric fleet integration.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💡 Tech-Driven</h3>
+                        <p>Blockchain-enabled supply chain transparency and automated dispatch systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <h2>Our Solutions</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>FDGT Fleet Platform</h3>
+                    <p>Comprehensive fleet management system with predictive maintenance and driver performance analytics.</p>
+                    <ul class="project-features">
+                        <li>Real-time GPS tracking</li>
+                        <li>Fuel efficiency monitoring</li>
+                        <li>Automated compliance reporting</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Smart Dispatch AI</h3>
+                    <p>Intelligent load matching and route optimization that reduces empty miles by 40%.</p>
+                    <ul class="project-features">
+                        <li>Machine learning algorithms</li>
+                        <li>Weather and traffic integration</li>
+                        <li>Dynamic pricing engine</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Green Logistics Initiative</h3>
+                    <p>Sustainable transportation solutions with carbon offset tracking and electric vehicle integration.</p>
+                    <ul class="project-features">
+                        <li>EV fleet deployment</li>
+                        <li>Carbon credit management</li>
+                        <li>Eco-routing optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-lead">Ready to transform your logistics operations?</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:contact@fdgt.com">contact@fdgt.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+15551234567">(555) 123-FDGT</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong>
+                        <span>123 Logistics Drive, Tech City, TC 12345</span>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <button class="cta-button">Schedule a Demo</button>
+                    <p class="cta-note">Join 500+ companies already optimizing with FDGT</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <small>© <span id="year"></span> FDGT. All rights reserved.</small>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#careers">Careers</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // CTA button interaction
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            this.textContent = 'Request Sent!';
+            this.style.background = 'var(--accent)';
+            this.style.color = 'var(--bg)';
+            setTimeout(() => {
+                this.textContent = 'Schedule a Demo';
+                this.style.background = '';
+                this.style.color = '';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
