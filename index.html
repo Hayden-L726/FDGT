@@ -4,90 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FDGT - Fast and Direct Goods Transportation</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
-        <div class="header-content">
-            <h1>FDGT</h1>
-            <p class="tagline">Bringing the trucking industry into the 21st century</p>
-            <div class="header-stats">
-                <div class="stat">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Partners</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">10M+</span>
-                    <span class="stat-label">Miles Logged</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">99.7%</span>
-                    <span class="stat-label">On-Time Delivery</span>
-                </div>
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <h1>FDGT</h1>
             </div>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#shippers" class="nav-link">For Shippers</a></li>
+                <li><a href="#carriers" class="nav-link">For Carriers</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="content">
-        <section id="about" class="fade-in">
-            <h2>About FDGT</h2>
-            <div class="about-content">
-                <p class="lead">Fast and Direct Goods Transportation is revolutionizing logistics through cutting-edge technology and sustainable practices.</p>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <h2>Revolutionizing Trucking Logistics</h2>
+                <p class="hero-tagline">Fast, Direct, and Efficient Goods Transportation for the Modern Era</p>
+                <div class="cta-buttons">
+                    <a href="#shippers" class="cta-button primary">I'm a Shipper</a>
+                    <a href="#carriers" class="cta-button secondary">I'm a Carrier</a>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>500+</h3>
+                    <p>Verified Carriers</p>
+                </div>
+                <div class="stat-card">
+                    <h3>10,000+</h3>
+                    <p>Successful Shipments</p>
+                </div>
+                <div class="stat-card">
+                    <h3>99.7%</h3>
+                    <p>On-Time Delivery Rate</p>
+                </div>
+                <div class="stat-card">
+                    <h3>24/7</h3>
+                    <p>Support & Tracking</p>
+                </div>
+            </div>
+
+            <div class="features">
+                <h2>Why Choose FDGT?</h2>
                 <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>🚚 Smart Logistics</h3>
-                        <p>AI-powered route optimization and real-time tracking for maximum efficiency.</p>
+                    <div class="feature">
+                        <h3>🚚 Smart Matching</h3>
+                        <p>AI-powered carrier-shipper matching for optimal rates and capacity</p>
                     </div>
-                    <div class="feature-card">
-                        <h3>🌱 Eco-Friendly</h3>
-                        <p>Reducing carbon footprint through optimized routes and electric fleet integration.</p>
+                    <div class="feature">
+                        <h3>📱 Real-Time Tracking</h3>
+                        <p>Live GPS tracking and automated status updates</p>
                     </div>
-                    <div class="feature-card">
-                        <h3>💡 Tech-Driven</h3>
-                        <p>Blockchain-enabled supply chain transparency and automated dispatch systems.</p>
+                    <div class="feature">
+                        <h3>💸 Transparent Pricing</h3>
+                        <p>No hidden fees with competitive market rates</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🌱 Eco-Conscious</h3>
+                        <p>Reduced empty miles and carbon emissions</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="fade-in">
-            <h2>Our Solutions</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>FDGT Fleet Platform</h3>
-                    <p>Comprehensive fleet management system with predictive maintenance and driver performance analytics.</p>
-                    <ul class="project-features">
-                        <li>Real-time GPS tracking</li>
-                        <li>Fuel efficiency monitoring</li>
-                        <li>Automated compliance reporting</li>
-                    </ul>
+        <!-- Shippers Page -->
+        <section id="shippers" class="page">
+            <div class="page-header">
+                <h2>Solutions for Shippers</h2>
+                <p class="page-subtitle">Streamline your logistics with our advanced shipping platform</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>📦 Capacity Access</h3>
+                    <p>Connect with 500+ verified carriers with available capacity</p>
                 </div>
-                <div class="project-card">
-                    <h3>Smart Dispatch AI</h3>
-                    <p>Intelligent load matching and route optimization that reduces empty miles by 40%.</p>
-                    <ul class="project-features">
-                        <li>Machine learning algorithms</li>
-                        <li>Weather and traffic integration</li>
-                        <li>Dynamic pricing engine</li>
-                    </ul>
+                <div class="benefit-card">
+                    <h3>💰 Cost Savings</h3>
+                    <p>Reduce shipping costs by 15-30% through competitive bidding</p>
                 </div>
-                <div class="project-card">
-                    <h3>Green Logistics Initiative</h3>
-                    <p>Sustainable transportation solutions with carbon offset tracking and electric vehicle integration.</p>
-                    <ul class="project-features">
-                        <li>EV fleet deployment</li>
-                        <li>Carbon credit management</li>
-                        <li>Eco-routing optimization</li>
-                    </ul>
+                <div class="benefit-card">
+                    <h3>⏱️ Time Efficiency</h3>
+                    <p>Book shipments in minutes, not days</p>
                 </div>
+                <div class="benefit-card">
+                    <h3>📊 Analytics</h3>
+                    <p>Comprehensive reporting and supply chain insights</p>
+                </div>
+            </div>
+
+            <div class="shipper-features">
+                <h3>Key Features for Shippers</h3>
+                <ul class="feature-list">
+                    <li>Instant load posting and carrier matching</li>
+                    <li>Automated documentation and billing</li>
+                    <li>Real-time shipment tracking</li>
+                    <li>Carrier performance ratings and reviews</li>
+                    <li>Dedicated account management</li>
+                    <li>Custom reporting and analytics</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Transform Your Shipping?</h3>
+                <a href="#contact" class="cta-button primary">Get Started Today</a>
             </div>
         </section>
 
-        <section id="contact" class="fade-in">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-lead">Ready to transform your logistics operations?</p>
+        <!-- Carriers Page -->
+        <section id="carriers" class="page">
+            <div class="page-header">
+                <h2>Opportunities for Carriers</h2>
+                <p class="page-subtitle">Maximize your revenue and minimize empty miles</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>🚛 More Loads</h3>
+                    <p>Access thousands of premium shipping opportunities</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💵 Better Rates</h3>
+                    <p>Competitive bidding and premium freight options</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🛣️ Reduced Deadhead</h3>
+                    <p>Smart backhaul matching to minimize empty miles</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>📱 Easy Management</h3>
+                    <p>Mobile-friendly platform for on-the-go load management</p>
+                </div>
+            </div>
+
+            <div class="carrier-features">
+                <h3>Benefits for Carriers</h3>
+                <ul class="feature-list">
+                    <li>Pre-negotiated rates with reputable shippers</li>
+                    <li>Fast, reliable payment processing</li>
+                    <li>Free ELD integration and compliance tools</li>
+                    <li>Fuel discount programs and perks</li>
+                    <li>24/7 dispatch and support services</li>
+                    <li>Growing network of consistent freight</li>
+                </ul>
+            </div>
+
+            <div class="requirements">
+                <h3>Carrier Requirements</h3>
+                <ul class="requirement-list">
+                    <li>Valid MC number and operating authority</li>
+                    <li>Active insurance meeting our standards</li>
+                    <li>Clean safety record</li>
+                    <li>ELD compliance</li>
+                    <li>Professional equipment and service</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <h3>Join Our Carrier Network</h3>
+                <a href="#contact" class="cta-button primary">Apply Now</a>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="page-header">
+                <h2>Contact Us</h2>
+                <p class="page-subtitle">Get in touch to learn how FDGT can transform your logistics</p>
+            </div>
+
+            <div class="contact-grid">
                 <div class="contact-info">
+                    <h3>Get In Touch</h3>
                     <div class="contact-item">
                         <strong>Email:</strong>
                         <a href="mailto:contact@fdgt.com">contact@fdgt.com</a>
@@ -100,10 +196,42 @@
                         <strong>Address:</strong>
                         <span>123 Logistics Drive, Tech City, TC 12345</span>
                     </div>
+                    <div class="contact-item">
+                        <strong>Hours:</strong>
+                        <span>Monday-Friday: 8AM-6PM EST</span>
+                    </div>
                 </div>
-                <div class="cta-section">
-                    <button class="cta-button">Schedule a Demo</button>
-                    <p class="cta-note">Join 500+ companies already optimizing with FDGT</p>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I am a...</label>
+                            <select id="interest" name="interest">
+                                <option value="shipper">Shipper</option>
+                                <option value="carrier">Carrier</option>
+                                <option value="both">Both</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button primary">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -111,52 +239,67 @@
 
     <footer class="site-footer">
         <div class="footer-content">
-            <small>© <span id="year"></span> FDGT. All rights reserved.</small>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-                <a href="#careers">Careers</a>
+            <div class="footer-info">
+                <h3>FDGT</h3>
+                <p>Fast and Direct Goods Transportation</p>
+                <p>Bringing the trucking industry into the 21st century</p>
             </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#shippers">For Shippers</a>
+                    <a href="#carriers">For Carriers</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#careers">Careers</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© <span id="year"></span> FDGT. All rights reserved.</small>
         </div>
     </footer>
 
     <script>
         // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
-        
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
+        // Navigation functionality
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all links and pages
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+                
+                // Add active class to clicked link
+                this.classList.add('active');
+                
+                // Show corresponding page
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).classList.add('active');
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
             });
-        }, observerOptions);
-
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
         });
 
-        // CTA button interaction
-        document.querySelector('.cta-button').addEventListener('click', function() {
-            this.textContent = 'Request Sent!';
-            this.style.background = 'var(--accent)';
-            this.style.color = 'var(--bg)';
-            setTimeout(() => {
-                this.textContent = 'Schedule a Demo';
-                this.style.background = '';
-                this.style.color = '';
-            }, 2000);
+        // Simple form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Show home page by default
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('home').classList.add('active');
         });
     </script>
 </body>
